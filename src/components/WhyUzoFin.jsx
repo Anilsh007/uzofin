@@ -48,7 +48,7 @@ export default function WhyUzoFin() {
 
   return (
     <section className="bg-black py-28 overflow-hidden">
-      {/* Heading Section */}
+      
       <div className="text-center max-w-5xl mx-auto px-6">
         <h2 className="text-4xl md:text-6xl font-poppins text-white">
           Why{" "}
@@ -63,7 +63,6 @@ export default function WhyUzoFin() {
         </p>
       </div>
 
-      {/* Marquee Rows */}
       <div className="mt-20 space-y-14">
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="overflow-hidden whitespace-nowrap">

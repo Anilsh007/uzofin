@@ -27,7 +27,7 @@ const features = [
 ];
 
 export default function IndustryCarousel() {
-  const [hoveredIndex, setHoveredIndex] = useState(null); 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
   const sliderRef = useRef(null);
   const scrollAnim = useRef(null);
@@ -78,12 +78,10 @@ export default function IndustryCarousel() {
 
   return (
     <>
-      <div
-        className=" w-full h-[5rem] absolute"
+      <div className=" w-full h-[5rem] absolute"
         style={{
           zIndex: 9,
-          background:
-            "linear-gradient(rgb(0 0 0) 0%, rgb(255 255 255 / 0%) 100%)",
+          background: "linear-gradient(rgb(0 0 0) 0%, rgb(255 255 255 / 0%) 100%)",
         }}
       />
       <section className="relative overflow-hidden pt-24 pb-24 bg-black">
@@ -95,7 +93,6 @@ export default function IndustryCarousel() {
           <img src={img5} className="bg-slide bg5" />
         </div>
 
-        {/* HEADING */}
         <div className="relative z-10 text-center mb-16 px-4">
           <p className="text-2xl sm:text-3xl text-cyan-400">24/7 support</p>
 
@@ -104,7 +101,6 @@ export default function IndustryCarousel() {
           </h2>
         </div>
 
-        {/* CAROUSEL */}
         <div
           className="overflow-hidden relative h-[70vh]"
           onMouseEnter={handleMouseEnter}
@@ -112,12 +108,9 @@ export default function IndustryCarousel() {
         >
           <div ref={sliderRef} className="flex gap-6 sm:gap-10 w-max mt-16">
             {[...features, ...features].map((item, index) => (
-              <div
-                key={index}
-                className="card-wrapper"
+              <div key={index} className="card-wrapper"
                 onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
+                onMouseLeave={() => setHoveredIndex(null)} >
                 <div className="w-[430px] h-full rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 sm:p-8 text-center">
                   <h3 className="font-normal text-[28px] text-center text-purple-300 mb-3">{item.title}</h3>
                   <p className="text-[20px] font-normal text-center text-gray-300">{item.desc}
@@ -132,8 +125,7 @@ export default function IndustryCarousel() {
         </div>
       </section>
 
-      <div
-        className=" w-full h-[5rem] absolute"
+      <div className=" w-full h-[5rem] absolute"
         style={{
           zIndex: 9,
           marginTop: "-79px",

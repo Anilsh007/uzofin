@@ -53,10 +53,10 @@ export default function FinancialSuiteSection() {
     let rotationCount = 0; // odd/even rotations
 
     const rotateLoop = () => {
-      // Toggle scale rotation count
+      // Toggle scale
       const scaleValue = rotationCount % 2 === 0 ? 0.9 : 1;
 
-      // Forward rotation (clockwise)
+      // Forward rotation
       gsap.to(spiralRef.current, {
         rotation: currentRotation + 180,
         scale: scaleValue,
@@ -86,7 +86,7 @@ export default function FinancialSuiteSection() {
   return (
     <section className="relative w-full bg-black text-white overflow-hidden pt-24 lg:pt-36">
 
-      <img src={curve} alt="curve" className="absolute w-full object-contain opacity-100 -top-48 sm:-top-32" />
+      <img src={curve} alt="curve" className="absolute w-full object-contain opacity-100 sm:-top-32" />
 
       <div className="relative z-10 max-w-[90vw] mx-auto lg:max-w-[1200px]">
 
@@ -126,7 +126,6 @@ export default function FinancialSuiteSection() {
             <p className="section-desc mt-4 text-base sm:text-lg">Tools that accelerate every step of your financial workflow.</p>
           </div>
 
-          {/* FEATURE CARDS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-full lg:w-2/3 px-4 lg:px-0 lg:ml-[10rem] sm:ml-0">
             {features.map((item, index) => (
               <div key={index} className={`feature-card ${item.mt} w-full sm:w-full lg:w-[350px] mx-auto`}>
@@ -140,9 +139,7 @@ export default function FinancialSuiteSection() {
 
                 <div className="mt-6">
                   <p className="feature-value">
-                    {item.showBadge && (
-                      <span className="w-2 h-2 bg-[#1FCFF1] rounded-full inline-block mr-1"></span>
-                    )}
+                    {item.showBadge && (<span className="w-2 h-2 bg-[#1FCFF1] rounded-full inline-block mr-1"></span>)}
                     {item.value}
                   </p>
                   <span className="feature-label">{item.label}</span>

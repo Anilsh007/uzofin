@@ -22,7 +22,7 @@ export default function TrustedCompanies() {
         <section className="bg-black py-12 md:py-16">
             <div className="max-w-7xl mx-auto px-4 text-center">
 
-                <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[1.2] tracking-wide uppercase text-[#37CCF7] mb-10"> Powering tools and integration for companies around the world </p>
+                <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[1.2] tracking-wide uppercase text-[#37CCF7] mb-10">Powering tools and integration for companies around the world</p>
 
                 <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16">
                     {companies.map((company, index) => (

@@ -16,14 +16,12 @@ const Footer = () => {
       <div className="footer-top-border"></div>
 
       <div className="footer-main">
-        {/* Logo */}
         <div className="footer-logo-section">
           <img src={logo} alt="UzOFin Logo" className="footer-logo" />
           <p className="footer-logo-text">Experience the new age of payments with UzOFin and explore new growth opportunities to reach greater heights.</p>
         </div>
 
-        {/* Products */}
-        <div>
+        <div className="w-[fit-content]">
           <h3 className="footer-title footer-gradient-title">Products</h3>
           <ul className="footer-list">
             {["AI Banking", "Payment", "Payout", "Merchant Onboarding", "FRM"].map((item) => (
@@ -32,8 +30,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Company */}
-        <div>
+        <div className="w-[fit-content]">
           <h3 className="footer-title footer-gradient-title">Company</h3>
           <ul className="footer-list">
             {["About Us", "Help Center", "Contact"].map((item) => (
@@ -42,8 +39,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Legal */}
-        <div>
+        <div className="w-[fit-content]">
           <h3 className="footer-title footer-gradient-title">Legal</h3>
           <ul className="footer-list">
             {["Cookie Policy", "Privacy Policy", "Terms of Service"].map((item) => (
@@ -52,8 +48,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social */}
-        <div>
+        <div className="w-[fit-content]">
           <h3 className="footer-social-title">Social</h3>
           <ul className="footer-social-list">
             {socialLinks.map((item, index) => (
@@ -71,6 +66,7 @@ const Footer = () => {
         <p className="footer-bottom-hover">India (EN)</p>
       </div>
     </footer>
+    
   );
 };
 

@@ -3,18 +3,15 @@
   @apply fixed top-0 left-0 w-full z-50 bg-black/40;
 }
 
-/* CONTAINER (Figma exact desktop) */
 .navbar-container {
   @apply w-[87vw] mx-auto h-[88px] flex items-center justify-between px-4 sm:px-8;
 }
 
-/* LOGO (Figma size) */
 .navbar-logo {
   width: 100px;
   height: auto;
 }
 
-/* NAV LINKS CONTAINER */
 .navbar-links {
   @apply hidden lg:flex items-center;
   width: 442px;
@@ -23,7 +20,6 @@
   color: #C4C4C4;
 }
 
-/* MENU TEXT */
 .navbar-link {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -33,12 +29,10 @@
   text-align: center;
 }
 
-/* RIGHT SIDE */
 .navbar-actions {
   @apply flex items-center gap-4;
 }
 
-/* HAMBURGER */
 .navbar-hamburger {
   @apply lg:hidden text-white text-2xl;
 }
@@ -76,7 +70,6 @@
   @apply relative md:px-12 pt-[4.5rem];
 }
 
-/* Title */
 .hero-title {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -85,7 +78,6 @@
   line-height: 5rem;
 }
 
-/* Highlight */
 .hero-highlight {
   font-weight: 500;
   background: linear-gradient(to right, #22d3ee, #a855f7);
@@ -94,10 +86,9 @@
 }
 
 .hero_buttons {
-  @apply mt-[2.5rem] flex flex-col sm:flex-row gap-7 justify-center;
+  @apply mt-[2.5rem] flex flex-col sm:flex-row gap-7 justify-center w-[100%] mx-auto;
 }
 
-/* Description */
 .hero-desc {
   @apply text-base md:text-lg lg:text-[20px] mt-6 max-w-4xl mx-auto leading-[30px] text-gray-400;
 }
@@ -118,11 +109,7 @@
 
 .stat-number-primary {
   @apply text-[80px] font-normal;
-
-  background: linear-gradient(261.81deg,
-      #19FB9B -8.01%,
-      #8C01FA 100%);
-
+  background: linear-gradient(261.81deg, #19FB9B -8.01%, #8C01FA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -131,11 +118,7 @@
 
 .stat-number-secondary {
   @apply text-[80px] leading-[132px] font-normal;
-
-  background: linear-gradient(260.33deg,
-      #0047FF -13.37%,
-      #00BCD4 109.53%);
-
+  background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -152,11 +135,7 @@
 
 .stat-wrapper {
   @apply text-[80px] leading-[132px] font-normal;
-
-  background: linear-gradient(260.33deg,
-      #00FFBD -13.37%,
-      #025B8C 109.53%);
-
+  background: linear-gradient(260.33deg, #00FFBD -13.37%, #025B8C 109.53%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -187,6 +166,7 @@
   @apply text-[14px] leading-[27.3px] uppercase font-normal text-gray-400;
 }
 
+/* ========================================================================================= */
 /* FasterApiSection css */
 .bg-slide {
   position: absolute;
@@ -199,7 +179,6 @@
   will-change: opacity, transform;
 }
 
-/* Delay each image properly */
 .bg1 {
   animation-delay: 0s;
 }
@@ -220,8 +199,6 @@
   animation-delay: 20s;
 }
 
-
-/* ✅ Ultra Smooth Professional Crossfade */
 @keyframes smoothCrossfade {
 
   0% {
@@ -248,22 +225,18 @@
 /* ============================================================================ */
 /* Footer.css */
 
-/* Footer Container */
 .footer-container {
-  @apply bg-black text-gray-400 max-w-full mx-auto px-[10rem] sm:px-8 lg:px-[6rem] py-12;
+  @apply bg-black text-gray-400 max-w-full mx-auto px-[2rem] lg:px-[6rem] py-12;
 }
 
-/* Top Border */
 .footer-top-border {
   @apply border-t border-blue-900 mb-10;
 }
 
-/* Main Flex Layout */
 .footer-main {
   @apply flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-between gap-10;
 }
 
-/* Logo Section */
 .footer-logo-section {
   @apply flex-shrink-0 lg:w-1/4;
 }
@@ -273,10 +246,9 @@
 }
 
 .footer-logo-text {
-  @apply text-sm leading-relaxed text-[#C4C4C499] max-w-sm;
+  @apply text-sm leading-relaxed text-[#C4C4C499];
 }
 
-/* Section Titles */
 .footer-title {
   @apply text-sm font-semibold tracking-wider uppercase;
 }
@@ -289,7 +261,6 @@
   @apply text-sm font-semibold tracking-wider uppercase text-blue-500;
 }
 
-/* List Items */
 .footer-list {
   @apply space-y-3 mt-4;
 }
@@ -298,7 +269,6 @@
   @apply text-sm text-[#C4C4C499] hover:text-white transition-colors duration-300 cursor-pointer;
 }
 
-/* Social Icons */
 .footer-social-list {
   @apply space-y-4 mt-4;
 }
@@ -308,30 +278,17 @@
 }
 
 .footer-social-icon-wrapper {
-  @apply relative w-9 h-9 flex items-center justify-center rounded-full bg-gradient-to-r from-[#7058EE29] via-[#C94DB529] to-[#D8A55729] border border-white/10 transition-all duration-300;
+  @apply relative w-9 h-9 flex items-center justify-center rounded-full bg-gradient-to-r from-[#7058EE29] via-[#C94DB529] to-[#D8A55729] border border-white/10 transition-all duration-300 group-hover:bg-transparent group-hover:border-transparent;
 }
 
-.footer-social-icon-wrapper svg {
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.footer-social-item:hover .footer-social-icon-wrapper {
-  @apply bg-transparent border-transparent;
-}
-
-.footer-social-item:hover .footer-social-icon-wrapper svg {
-  background: linear-gradient(90deg, #7058EE, #C94DB5, #D8A557);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+.footer-social-icon {
+  @apply text-white transition-opacity duration-300 group-hover:opacity-0;
 }
 
 .footer-social-text {
   @apply text-sm text-[#C4C4C499] group-hover:text-white transition-colors duration-300;
 }
 
-/* Bottom Section */
 .footer-bottom {
   @apply mt-12 border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 text-center sm:text-left gap-4;
 }
