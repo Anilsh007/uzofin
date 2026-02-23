@@ -127,12 +127,12 @@ export default function FinancialSuiteSection() {
           </div>
 
           {/* FEATURE CARDS */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-full lg:w-2/3 px-4 lg:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-full lg:w-2/3 px-4 lg:px-0 lg:ml-[10rem] sm:ml-0">
             {features.map((item, index) => (
-              <div key={index} className={`feature-card ${item.mt} w-full sm:w-full lg:w-[320px] mx-auto`}>
+              <div key={index} className={`feature-card ${item.mt} w-full sm:w-full lg:w-[350px] mx-auto`}>
 
                 <h4 className="feature-title flex items-center">
-                  <span className={`${item.barColor} w-1 h-5 inline-block mr-3`}></span>
+                  <span className={`${item.barColor} w-[1px] h-6 font-weight: 100 inline-block mr-3`}></span>
                   {item.title}
                 </h4>
 
