@@ -132,7 +132,7 @@ export default function FinancialSuiteSection() {
               <div key={index} className={`feature-card ${item.mt} w-full sm:w-full lg:w-[350px] mx-auto`}>
 
                 <h4 className="feature-title flex items-center">
-                  <span className={`${item.barColor} w-[1px] h-6 font-weight: 100 inline-block mr-3`}></span>
+                  <span className={`${item.barColor} w-[1.5px] h-6 font-weight: 100 inline-block mr-3`}></span>
                   {item.title}
                 </h4>
 
