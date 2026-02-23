@@ -97,7 +97,7 @@ export default function FinancialSuiteSection() {
               Your Business Pays Are Now <br /> Faster and Secure
             </h1>
 
-            <img src={spiral} alt="spiral" ref={spiralRef} className="mt-12 w-64 sm:w-80 lg:w-96 mx-auto lg:mx-0" />
+            <img src={spiral} alt="spiral" ref={spiralRef} className="mt-12 w-100 sm:w-100 lg:w-100 mx-auto lg:mx-0" />
           </div>
 
           <div className="mt-12 lg:mt-0 flex flex-col space-y-8 text-center lg:text-left">
