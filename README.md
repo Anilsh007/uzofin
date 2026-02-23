@@ -1,16 +1,26 @@
-# React + Vite
+# Interview Task – UzoFin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Screenshot](public/screenshots/home.png)
 
-Currently, two official plugins are available:
+## Project Description
+"Interview Task" is a React project built using **Vite**, **React 19**, **React Router DOM**, **TailwindCSS**, and **GSAP**.  
+It showcases a modern React web application with modular components, smooth animations, and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is deployed on GitHub Pages: [https://Anilsh007.github.io/uzofin](https://Anilsh007.github.io/uzofin)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Live Demo
+Check the live project here: [https://Anilsh007.github.io/uzofin](https://Anilsh007.github.io/uzofin)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+- Responsive React frontend using modern practices
+- Routing with React Router DOM
+- Smooth animations with GSAP
+- TailwindCSS styling and Poppins font
+- Deployment-ready with GitHub Pages
+- Component-based modular architecture
+
+---
