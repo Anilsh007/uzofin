@@ -54,7 +54,7 @@ export default function FinancialSuiteSection() {
 
     const rotateLoop = () => {
       // Toggle scale rotation count
-      const scaleValue = rotationCount % 2 === 0 ? 0.8 : 1;
+      const scaleValue = rotationCount % 2 === 0 ? 0.9 : 1;
 
       // Forward rotation (clockwise)
       gsap.to(spiralRef.current, {
@@ -92,7 +92,7 @@ export default function FinancialSuiteSection() {
 
         <div className="w-full flex flex-col lg:flex-row lg:justify-between items-center lg:items-start">
 
-          <div className="lg:pl-40 text-center lg:text-left">
+          <div className="lg:pl-[7rem] text-center lg:text-left">
             <h1 className="main-heading text-3xl sm:text-4xl lg:text-5xl leading-snug sm:leading-tight lg:leading-tight">
               Your Business Pays Are Now <br /> Faster and Secure
             </h1>
